@@ -33,8 +33,6 @@ function gameProcess () {
     $('#finishGame').css({"display": "none", "visibility": "hidden"});
     $('#game').css({"display": "flex", "visibility": "visible"});
 
-    console.log(window.gameLevel, );
-
     if (gameLevel === 1) {
         window.gameLevel = 1;
         window.gameMaxFails = 5;
