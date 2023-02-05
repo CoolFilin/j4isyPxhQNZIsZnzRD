@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Клавиатурный тренажер</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/start.css">
+    <link rel="stylesheet" href="src/css/game.css">
+    <link rel="stylesheet" href="src/css/finish.css">
+    <link rel="stylesheet" href="src/css/victory.css">
+    <link rel="stylesheet" href="src/css/endGame.css">
+</head>
+<body>
+    <div id="content">
+        <div id="playMusic" class="fs-2">🔈</div>
+
+        <div id="start" class="rounded border border-3 border-success mt-3">
+            <div class="start-0">
+                Добро пожаловать в<br>
+                <b>«Клавиатурный тренажер»</b>
+            </div>
+            <div class="start-1">
+                Здесь Вам предстоит сразиться с монстрами,<br>
+                что бы доказать, что вы достойны!
+            </div>
+            <div class="start-2">
+                Достойны пользоваться клавиатурой!
+            </div>
+            <div class="start-3">
+                <span>Начнём, Салага?</span>
+                <div>
+                    <button id="pooNotPlayBtn" class="btn btn-danger">Пошёл, ты!</button><br>
+                    <button id="readyToPlayBtn" class="btn btn-success border border-success">Давай начнём!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game" class="mt-3">
+            <div id="gameLevel" class="rounded border border-3 border-success">Уровень 0</div>
+            <div id="gameScene" class="rounded border border-3 border-success mt-3">
+                <img id="gameDisplayEnemy" alt="enemy">
+            </div>
+            <div id="gameHud" class="mt-3 fs-6">
+                <div id="gameEnemyHealth" class="rounded border border-3 border-success">Здоровье</div>
+                <div id="gameMistakes" class="rounded border border-3 border-success">Ошибки</div>
+                <div id="gameTimer" class="rounded border border-3 border-success">Время</div>
+            </div>
+            <div id="gameText" class="rounded border border-3 border-success mt-3 fs-5 p-2"></div>
+        </div>
+
+        <img id="failKey" src="assets/img/failKey.png" alt="failKey">
+
+        <div id="finishGame" class="rounded border border-3 border-success mt-3"></div>
+        
+        <div id="victoryGame" class="rounded border border-3 border-success mt-3">Победа, идём дальше!</div>
+        
+        <div id="endGame" class="rounded border border-3 border-success mt-3">
+            Поздравляю с прохождением!<br>
+            <b>Теперь вы достойны пользоваться клавиатурой!</b><br><br>
+            <button id="startNewGame" class="btn btn-success border border-success">Начать заново!</button><br><br>
+            © coolfilin / <a href="https://yoomoney.ru/bill/pay/LS89zwKHIog.230205" target="_blank" class="text-info">Поддержать автора</a>
+        </div>
+
+        <!-- <div id="end-game">4</div> -->
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <script src="src/js/game.js"></script>
+    <script src="src/js/start.js"></script>
+</body>
+</html>
