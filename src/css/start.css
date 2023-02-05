@@ -1,1 +1,28 @@
-#start{display:flex;flex-direction:column;justify-content:center;align-items:center;width:60vw;height:40vh;font-size:16pt;background-color:#198754}.start-1,.start-2,.start-3{display:none;visibility:hidden;flex-direction:column;justify-content:center;align-items:center;width:60vw;height:40vw}.start-3 div{line-height:40pt}
+#start {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60vw;
+    height: 40vh;
+
+    font-size: 16pt;
+    background-color: rgb(25, 135, 84, .55);
+}
+
+.start-1, .start-2, .start-3 {
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60vw;
+    height: 40vw;
+}
+
+.start-3 div{
+    line-height: 40pt;
+}
